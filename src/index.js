@@ -87,7 +87,7 @@ function decode(expr) {
   
             }         
         }      
-      }
+      
       for(let i=0;i<array2.length;i++){
             if(array2[i].length >1){
                let new_elem = array2[i].toString();
@@ -108,9 +108,12 @@ function decode(expr) {
               i++;
             }
             finish_string+=MORSE_TABLE[array2[i]];            
-            return finish_string;
+            
+ 
+  }
+  return finish_string;
 }
-
 module.exports = {
     decode
-}
+ }
+
